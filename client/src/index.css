@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Custom base styles */
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+  button, [type='button'], [type='submit'] {
+    @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors;
+  }
+  input, textarea, select {
+    @apply border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-light;
+  }
+}
